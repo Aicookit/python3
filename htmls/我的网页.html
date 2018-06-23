@@ -1,0 +1,20 @@
+{% load static %}      #1、在html文件中导入你的样式文件,{% load+文件名 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的网页</title>
+</head>
+<frameset rows="100,*,100" >
+    <frame name="top" src="html.top.html" >
+    <frameset cols="20,80">
+        <frame name="left" src="left.html">
+        <frame name="right" src="right.html">
+    </frameset>
+    <frame name="bottom" src="html.bottom.html">
+</frameset>
+
+<body>
+
+</body>
+</html>
